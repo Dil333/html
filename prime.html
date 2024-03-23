@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            prime number
+        </title>
+    </head>
+    <body>
+        To check prime number:
+        <input type="number" id="number"><br><br>
+        <input type="button" onclick="prime()" value="check"><br>
+        <script>
+            function prime(){
+            num=document.getElementById("number").value;
+            if(num==1){
+                document.write("1 is neither prime nor composite number");
+            }
+             if(num>1){
+                for(i=2;i<=num;i++){
+                 if(num%i==0){
+                    document.write("not prime");
+                    break;
+                    }
+                 else{
+                    document.write("prime number");
+                    break;
+                    }  
+        }
+             }   
+        }          
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>calculater using switch case</title>
+    </head>
+    <body>
+        <script>
+            let result;
+           const a=parseFloat(prompt("first_number:"));
+           const b=parseFloat(prompt("second_number:"));
+           const operator=prompt("enter your choice:(+,-,*,/)");
+           switch(operator){
+            case "+":
+                result=a+b;
+                document.write("add:",result);
+                break;
+            case "-":
+                result=a-b;
+                document.write("sub:",result);
+                break;
+            case "*":
+                result=a*b;
+                document.write("mult:",result);
+                break;
+            case "/":
+                if(b!=0){
+                result=a/b;
+                document.write("div:",result);
+                }
+                else{
+                    document.write("error devide by zero");
+                }
+                break;
+            default:
+                    document.write("invalid choice");
+           }
+        </script>
+    </body>
+</html>
