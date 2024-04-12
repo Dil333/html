@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('dilll.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#registerForm{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(red, green, blue, alpha);
+    backdrop-filter: green(20px);
+    color:red;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.input-box input{
+    width: 70%;
+    height: 5%;
+    background: transparent;
+    border: none;
+    outline:auto;
+    border: rgba(red, green, blue, alpha);
+    border-radius: 40px;
+    color:blue;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 20px 45px 20px 20px;
+}
+.subt{
+    width: 70%;
+    height: 5%;
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline:auto;
+    border: rgba(red, green, blue, alpha);
+    border-radius: 40px;
+    color:yellowgreen;
+    font-weight: bold;
+    padding: 20px 45px 20px 20px;
+}
+.subt:hover{
+    background-color: burlywood;
+    color: white;
+ }

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>
+            DIL website
+        </title>
+        <link rel="stylesheet" href="dweb.css">
+    </head>
+    <body>
+        <h2>WELCOME TO MY PERSONAL<br>&emsp;&emsp;&emsp;&emsp;WEBSITE</h2>
+        <br><h5>&emsp;&emsp;&emsp;&emsp;do you wanna visit my website?</h5>
+
+            <button onclick="document.getElementById('id02').style.display='block'"
+            style="width:auto;">LOGIN</button>
+            <div id="id02" class="dil">
+                <form class="dil-content animate" action="/tourism.html" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none'"
+                        class="close" title="close dil">&times;</span>
+                        <img src="drm.jpg" alt="drm.jpg" class="Avatar">
+                    </div>
+        
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter username" name="unmae" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="text" placeholder="Enter password" name="psw" required>
+                <button type="submit">LOGIN</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember">Remember me
+                </label>
+            </div>
+            <div class="contain" style="background-color: #f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forget<a href="#">password</a></span>
+            </div>
+         </form>
+        </div>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Create account</button> 
+          
+        <div id="id01" class="dil">
+            <form class="dil-content animate" action="/portfolio.html" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                    class="close" title="close dil">&times;</span>
+                    <img src="dmk.jpg" alt="dmk.jpg" class="Avatar">
+                </div>
+    
+        <div class="container">
+            <label for="uname"><b>Firstname</b></label>
+            <input type="text" placeholder="Enter first name" name="firstname" required>
+            <label for="lastname"><b>Lastname</b>
+            <input type="text" placeholder="Enter last name" name="lastname" required>
+            <label for="DOB"><b>Death of birth</b></label>
+            <input type="text" placeholder="enter Death of birth" name="DOB" required>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="enter email" name="email" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="text" placeholder="Enter password" name="psw" required>
+            <label for="cmfps"><b>confirm password</b></label>
+            <input type="text" placeholder="enter confirm password" name="psw" required>
+            <button type="submit" onclick="create()"><a href="portfolio.html"><b>SUBMIT</b></a></button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+        <script src="dweb.js"></script>
+    </body>
+</html>

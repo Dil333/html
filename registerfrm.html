@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Register form</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <form id="registerForm">
+        <div class="input-box">
+        Username<br>
+        <input type="text" id="username" value="" maxlength="20">
+        </div>
+        <div class="input-box">
+        <br><br>Email<br>
+        <input type="text" id="email" value="" maxlength="40">
+        </div>
+        <div class="input-box">
+        <br><br>Password<br>
+        <input type="password" id="password" value="" maxlength="12">
+        </div>
+        <div class="input-box">
+        <br><br>Confirm Password<br>
+        <input type="password" id="confirmPassword" value="" maxlength="12">
+        </div>
+        <br><br><br>
+        <div class="subt">
+        <input type="button" onclick="validateForm()" value="Submit">
+        </div>
+    </form>
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (username.dil() === '') {
+                alert('Please enter a username.');
+                return false;
+            }
+
+            if (email.dil() === '') {
+                alert('Please enter an email address.');
+                return false;
+            }
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            if (password.dil() === '') {
+                alert('Please enter a password.');
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                return false;
+            }
+
+            // If all validations pass, submit the form
+            document.getElementById('registerForm').submit();
+        }
+    </script>
+</body>
+</html>
